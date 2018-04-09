@@ -1,0 +1,79 @@
+doctype html
+html(lang=lang)
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='Content-Language' content=lang)
+    meta(name='viewport', content='width=device-width, user-scalable=no')
+    title NOGORD.IO | Cadastre-se
+    link(rel='apple-touch-icon', sizes='180x180', href='../assets/img/apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='../assets/img/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='../assets/img/favicon-16x16.png')
+    link(rel='manifest', href='../manifest.json')
+    link(rel='icon', href='../favicon.ico')
+    meta(name='theme-color', content='#000000')
+    link(rel='stylesheet',  href=(base + '/bundle.css'))
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,600', rel='stylesheet')
+    script(type='text/javascript', src=(base + '/state_manager/bridge.js'))
+    script(type='text/javascript', src=(base + '/bundle.js'))
+  body
+    // Topo
+    header#top.register-header
+      .container.align-center
+        a.logo(itemprop='brand', href=(base + '/'), m='', title='NOGORD.IO', onclick="gaClickButton('register_page','logo')")
+        .header-button.align-center.justify-center
+          a.full-button.red(href=(base + '/login'), onclick="gaClickButton('register_page','login_header')")
+            | !{t('register:link-login')}
+
+        .flags
+            a.flagPt(href="/pt/register/")
+            a.flagEn(href="/en/register/")  
+    // REGISTER
+    section#sign-up
+      .overflow
+        .register-bg
+      .container
+        h1
+          | !{t('register:title')} 
+          
+        form#register-form.inputs(action='#')
+          input#name(type='text', name='name', placeholder=t('register:name'), autocomplete='off')
+          input#lastName(type='text', name='lastName', placeholder=t('register:last-name'), autocomplete='off')
+          input#email(type='text', name='email', placeholder=t('register:email'), autocomplete='off')
+          input#phone(type='phone', name='phone', placeholder=(t('register:phone') + ' ex:+55(11)1234-5678'), autocomplete='off')
+          select#type.tip-of-use(name='type', autocomplete='off')
+            option(value='', disabled='', selected='') !{t('register:use-type')}
+            option(value='Para meu negócio') !{t('register:for-my-business')}
+            option(value='Para a empresa que trabalho') !{t('register:for-my-work')}
+            option(value='Para conhecimento') !{t('register:for-my-knowledge')}
+          .send-form
+            button.full-button.red(type='submit', name='submit-register') !{t('register:btn-register')}
+            p.link-extra
+              | !{t('register:do-you-have-an-account')}
+              a(href=(base + '/login'), onclick="gaClickButton('register_page','login_form')") !{t('register:link-login')}
+    // FOOTER
+    footer.align-center.justify-center.black
+      #contentFooter.container.align-center.justify-center
+        #contactLink.inside-links.justify-center
+          a(href=(base + '/contact'), onclick="gaClickButton('register_page','contact')") !{t('register:link-contact')}
+          // <a href="/carreira">Carreiras</a>
+        .social-media.align-center.justify-center
+          a.round-button.align-center.justify-center(href='https://www.facebook.com/NOGORDIO-144412962812734', onclick="gaClickButton('register_page','face_icon')")
+            i.icon-facebook(aria-hidden='true')
+          a.round-button.align-center.justify-center(href='https://www.linkedin.com/company-beta/25010351/', onclick="gaClickButton('register_page','linkedin_icon')")
+            i.icon-linkedin(aria-hidden='true')
+    script(src='https://unpkg.com/axios/dist/axios.min.js')
+    script(src='https://www.gstatic.com/firebasejs/4.2.0/firebase.js')
+    //
+      <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
+    script.
+      // Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyAN7qikG6-meF9OEuL1ImkK-jyB-TKgM70",
+      authDomain: "landing-page-e7b1f.firebaseapp.com",
+      databaseURL: "https://landing-page-e7b1f.firebaseio.com",
+      projectId: "landing-page-e7b1f",
+      storageBucket: "",
+      messagingSenderId: "445929185545"
+      };
+      firebase.initializeApp(config);

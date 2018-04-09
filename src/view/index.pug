@@ -1,0 +1,186 @@
+doctype html
+html(lang=lang)
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='Content-Language' content=lang)
+    meta(name='viewport', content='width=device-width, user-scalable=no')
+    title NOGORD.IO
+    link(rel='apple-touch-icon', sizes='180x180', href='../assets/img/apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='../assets/img/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='../assets/img/favicon-16x16.png')
+    link(rel='manifest', href='manifest.json')
+    link(rel='icon', href='favicon.ico')
+    meta(name='theme-color', content='#000000')
+    link(rel='stylesheet', href=(base + '/bundle.css'))
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600', rel='stylesheet')
+    script(type='text/javascript', src=(base + '/state_manager/bridge.js'))
+    script(type='text/javascript', src=(base + '/bundle.js'))
+  body
+    // Topo
+    header#top
+      .container.align-center
+        a.logo(itemprop='brand', href=(base + '/'), title='NOGORD.IO', onclick="gaClickButton('contact_page','logo')")
+        .header-button.align-center.justify-center
+          a.full-button.white.acesse(href=(base + '/login'), onclick="gaClickButton('main_page','login_header')")
+            | !{t('index:btn-login')}
+          a.full-button.red(href=(base + '/register'), onclick="gaClickButton('main_page','register_header')")
+            | !{t('index:link-register')}
+        .flags
+           a.flagPt(href="/pt/")
+           a.flagEn(href="/en/")  
+    
+    // Banner call to action
+
+      
+    section.call-to-action
+      .container.align-center.call
+        h1
+          | !{t('index:title')}  
+        p
+          | !{t('index:subtitle')}
+        if lang == 'pt' 
+          video.video(controls='', controlslist='nodownload' )
+            source(src='nog.mp4', type='video/mp4')
+        a.full-button.red(href=(base + '/register'), onclick="gaClickButton('main_page','register_call_to_action')")
+          | !{t('index:btn-register')}
+    // Info 1
+    section.business-topic.topic-1
+      .container
+        .topic-image.direita
+          img(src='../assets/img/ativo-de-conhecimento.png', alt='')
+        .topic-info
+          .topic-title
+            span.title-number
+              | 1
+            h2
+              | !{t('index:section1-title')}
+          p
+            | !{t('index:section1-subtitle')} 
+          .inline-buttons
+            //
+              <a class="outline-button red" href="#">
+              Conheça mais
+              </a>
+            a.full-button.blue(href= (base + '/register'), onclick="gaClickButton('main_page','register_info_1')")
+              | !{t('index:link-register')}
+    // Info 2
+    section.business-topic.red.topic-2
+      .overflow
+        .red-bg
+      .container
+        .topic-image
+          img(src='../assets/img/ferramenta-apropriada.png', alt='')
+        .topic-info
+          .topic-title
+            span.title-number
+              | 2
+            h2
+              | !{t('index:section2-title')}
+          p
+            | !{t('index:section2-subtitle')} 
+          .inline-buttons
+            //
+              <a class="outline-button white" href="#">
+              Conheça mais
+              </a>
+            a.full-button.blue(href=(base + '/register'), onclick="gaClickButton('main_page','register_info_2')")
+              | !{t('index:link-register')}
+    // Info 3
+    section.business-topic.topic-3
+      .container
+        .topic-image.direita.ajuste
+          img(src='../assets/img/desenvolvimento-de-regras.png', alt='')
+        .topic-info
+          .topic-title
+            span.title-number
+              | 3
+            h2
+              | !{t('index:section3-title')}
+          p
+            | !{t('index:section3-subtitle')}
+          .inline-buttons
+            //
+              <a class="outline-button red" href="#">
+              Conheça mais
+              </a>
+            a.full-button.blue(href=(base + '/register'), onclick="gaClickButton('main_page','register_info_3')")
+              | !{t('index:link-register')}
+    // Info 4
+    section.business-topic.red.topic-4
+      .overflow
+        .red-bg
+      .container
+        .topic-image
+          img(src='../assets/img/livre-para-escolher.png', alt='')
+        .topic-info
+          .topic-title
+            span.title-number
+              | 4
+            h2
+              | !{t('index:section4-title')}
+          p
+            | !{t('index:section4-subtitle')}
+          .inline-buttons
+            //
+              <a class="outline-button white" href="#">
+              Conheça mais
+              </a>
+            a.full-button.blue(href=(base + '/register'), onclick="gaClickButton('main_page','register_info_4')")
+              | !{t('index:link-register')}
+    // Info 5
+    section.business-topic.topic-5
+      .container
+        .topic-image.direita
+          img(src='../assets/img/voe.png', alt='')
+        .topic-info.img
+          .topic-title
+            span.title-number
+              | 5
+            h2
+              | !{t('index:section5-title')}
+          p
+            | !{t('index:section5-subtitle')}
+          .inline-buttons
+            //
+              <a class="outline-button red" href="#">
+              Conheça mais
+              </a>
+            a.full-button.blue(href=(base + '/register'), onclick="gaClickButton('main_page','register_info_5')")
+              |  !{t('index:link-register')}
+    // Extra information
+    section.info-system
+      img(src='../assets/img/banner.png', alt='')
+      .container
+        .info-paragraph
+          h2
+            | !{t('index:info-system-braas-title')}
+            span !{t('index:info-system-braas-subtitle')}
+          p
+            | !{t('index:info-system-braas-info')}
+        .info-paragraph
+          h2
+            | !{t('index:info-system-dataservice-title')}
+          p
+            | !{t('index:info-system-dataservice-info')}
+        .info-paragraph
+          h2
+            | !{t('index:info-system-modules-title')}
+          p
+            | !{t('index:info-system-modules-info')}
+    // Register banner
+    section#register.align-center.justify-center
+      p.container
+        | !{t('index:register')}
+      a.full-button.black.contain(href=(base + '/register'), onclick="gaClickButton('main_page','register_banner')")
+        | !{t('index:btn-register')} 
+    // Footer
+    footer.align-center.justify-center
+      #contentFooter.container.align-center.justify-center
+        #contactLink.inside-links.justify-center
+          a(href=(base + '/contact'), onclick="gaClickButton('main_page','contact')") !{t('index:link-contact')}
+          // <a href="/carreira">Carreiras</a>
+        .social-media.align-center.justify-center
+          a.round-button.align-center.justify-center(href='https://www.facebook.com/NOGORDIO-144412962812734', onclick="gaClickButton('main_page','face_icon')")
+            i.icon-facebook(aria-hidden='true')
+          a.round-button.align-center.justify-center(href='https://www.linkedin.com/company-beta/25010351/', onclick="gaClickButton('main_page','linkedin_icon')")
+            i.icon-linkedin(aria-hidden='true')

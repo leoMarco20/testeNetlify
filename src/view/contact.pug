@@ -1,0 +1,63 @@
+doctype html
+html(lang=lang)
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='Content-Language' content=lang)
+    meta(name='viewport', content='width=device-width, user-scalable=no')
+    title NOGORD.IO | !{t('contact:register')}
+    link(rel='apple-touch-icon', sizes='180x180', href='../assets/img/apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='../assets/img/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='../assets/img/favicon-16x16.png')
+    link(rel='manifest', href='../manifest.json')
+    link(rel='icon', href='../favicon.ico')
+    meta(name='theme-color', content='#000000')
+    link(rel='stylesheet', href=(base + '/bundle.css'))
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,600', rel='stylesheet')
+    script(type='text/javascript', src=(base + '/state_manager/bridge.js'))
+    script(type='text/javascript', src=(base + '/bundle.js'))
+  body.contact
+    // Topo
+    header#top.contact-header
+      .container.align-center
+        a.logo(itemprop='brand', href=(base + '/'), m='', title='NOGORD.IO', onclick="gaClickButton('contact_page','logo')")
+        .header-button.align-center.justify-center
+          a.full-button.red(href=(base + '/login'), onclick="gaClickButton('contact_page','login_header')")
+            | !{t('contact:link-login')}
+        .flags
+            a.flagPt(href="/pt/contact/")
+            a.flagEn(href="/en/contact/")  
+    // contact
+    section#sign-up
+      .overflow
+        .contact-bg
+      .container
+        h1 !{t('contact:title')}
+        form#contact-form.inputs(action='#')
+          input#name(type='text', name='name', placeholder=t('contact:name'), autocomplete='off')
+          input#email(type='text', name='email', placeholder=t('contact:email'), autocomplete='off')
+          input#phone(type='phone', name='phone', placeholder=t('contact:phone'), autocomplete='off')
+          textarea#message(name='message', rows='4', cols='18', placeholder=t('contact:message'))
+          .send-form
+            button.full-button.red(type='submit', name='submit-contact') !{t('contact:send')}
+    // FOOTER
+    footer.align-center.justify-center.black
+      #contentFooter.container.align-center.justify-center
+        #contactLink.inside-links.justify-center
+          // <a href="/carreira">Carreiras</a>
+        .social-media.align-center.justify-center
+          a.round-button.align-center.justify-center(href='https://www.facebook.com/NOGORDIO-144412962812734', onclick="gaClickButton('contact_page','face_icon')")
+            i.icon-facebook(aria-hidden='true')
+          a.round-button.align-center.justify-center(href='https://www.linkedin.com/company-beta/25010351/', onclick="gaClickButton('contact_page','linkedin_icon')")
+            i.icon-linkedin(aria-hidden='true')
+    script(src='https://unpkg.com/axios/dist/axios.min.js')
+    script(src='https://www.gstatic.com/firebasejs/4.2.0/firebase.js')
+    script.
+      var config = {
+      apiKey: "AIzaSyAN7qikG6-meF9OEuL1ImkK-jyB-TKgM70",
+      authDomain: "landing-page-e7b1f.firebaseapp.com",
+      databaseURL: "https://landing-page-e7b1f.firebaseio.com",
+      projectId: "landing-page-e7b1f",
+      storageBucket: "",
+      messagingSenderId: "445929185545"
+      };
+      firebase.initializeApp(config);
