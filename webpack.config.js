@@ -97,7 +97,7 @@ function config(lang) {
 
         plugins: [
             new ExtractTextPlugin("bundle.css"),
-            new CopyWebpackPlugin([{ from: './src/state_manager', to: 'state_manager' }]),
+            new CopyWebpackPlugin([{ from: './src/state_manager', to: 'state_manager' }, { from: './src/admin', to: 'admin' }]),
             new UglifyJSPlugin({ comments: false, sourceMap: false })
         ]
     };
