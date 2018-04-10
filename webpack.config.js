@@ -10,9 +10,9 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const i18n = require('./src/i18n.js');
 
-var yaml2json = require('yaml-to-json');
-var result = yaml2json("./content", {});
-console.log(result);
+YAML = require('yamljs');
+nativeObject = YAML.load('src/admin/config.yml');
+console.log(nativeObject);
 
 
 function config(lang) {

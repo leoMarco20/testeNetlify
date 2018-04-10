@@ -200,13 +200,6 @@ asap@~2.0.3:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
 
-asciidoctor.js@^1.5.0:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/asciidoctor.js/-/asciidoctor.js-1.5.5.tgz#bb2101f492f64d4e0cb703e1ab4c5731dcc9a079"
-  dependencies:
-    opal-runtime "0.11.0-integration8"
-    xmlhttprequest "~1.7.0"
-
 asn1.js@^4.0.0:
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-4.10.1.tgz#b9c2bf5805f1e64aadeed6df3a2bfafb5a73f5a0"
@@ -248,10 +241,6 @@ async-each@^1.0.0:
 async-foreach@^0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/async-foreach/-/async-foreach-0.1.3.tgz#36121f845c0578172de419a97dbeb1d16ec34542"
-
-async@^0.9.0:
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/async/-/async-0.9.2.tgz#aea74d5e61c1f899613bf64bda66d4c78f2fd17d"
 
 async@^1.5.2:
   version "1.5.2"
@@ -1280,10 +1269,6 @@ combined-stream@1.0.6, combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2.1.x:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.1.0.tgz#d121bbae860d9992a3d517ba96f56588e47c6781"
-
 commander@2.15.x, commander@^2.9.0, commander@~2.15.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.0.tgz#ad2a23a1c3b036e392469b8012cec6b33b4c1322"
@@ -1936,10 +1921,6 @@ esprima@^2.6.0:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
-esprima@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.0.tgz#4499eddcd1110e0b218bacf2fa7f7f59f55ca804"
-
 esprima@~3.1.0:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-3.1.3.tgz#fdca51cee6133895e3c88d535ce49dbff62a4633"
@@ -2214,10 +2195,6 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-findit@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/findit/-/findit-2.0.0.tgz#6509f0126af4c178551cfa99394e032e13a4d56e"
-
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
@@ -2402,7 +2379,7 @@ glob-parent@^3.1.0:
     is-glob "^3.1.0"
     path-dirname "^1.0.0"
 
-glob@6.0.4, glob@^6.0.4:
+glob@^6.0.4:
   version "6.0.4"
   resolved "https://registry.yarnpkg.com/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
   dependencies:
@@ -2445,12 +2422,6 @@ globule@^1.0.0:
     glob "~7.1.1"
     lodash "~4.17.4"
     minimatch "~3.0.2"
-
-graceful-fs@^3.0.2:
-  version "3.0.11"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-3.0.11.tgz#7613c778a1afea62f25c630a086d7f3acbbdd818"
-  dependencies:
-    natives "^1.1.0"
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.1.11"
@@ -3078,13 +3049,6 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
-js-yaml@^3.2.2:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef"
-  dependencies:
-    argparse "^1.0.7"
-    esprima "^4.0.0"
-
 js-yaml@~3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.7.0.tgz#5c967ddd837a9bfdca5f2de84253abe8a1c03b80"
@@ -3365,12 +3329,6 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-markdown@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/markdown/-/markdown-0.5.0.tgz#28205b565a8ae7592de207463d6637dc182722b2"
-  dependencies:
-    nopt "~2.1.1"
-
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
@@ -3584,10 +3542,6 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-natives@^1.1.0:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/natives/-/natives-1.1.3.tgz#44a579be64507ea2d6ed1ca04a9415915cf75558"
-
 ncname@1.0.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ncname/-/ncname-1.0.0.tgz#5b57ad18b1ca092864ef62b0b1ed8194f383b71c"
@@ -3707,12 +3661,6 @@ nopt@^4.0.1:
     abbrev "1"
     osenv "^0.1.4"
 
-nopt@~2.1.1:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/nopt/-/nopt-2.1.2.tgz#6cccd977b80132a07731d6e8ce58c2c8303cf9af"
-  dependencies:
-    abbrev "1"
-
 normalize-package-data@^2.3.2, normalize-package-data@^2.3.4:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.4.0.tgz#12f95a307d58352075a04907b84ac8be98ac012f"
@@ -3824,12 +3772,6 @@ once@^1.3.0, once@^1.3.1, once@^1.3.3, once@^1.4.0:
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
   dependencies:
     wrappy "1"
-
-opal-runtime@0.11.0-integration8:
-  version "0.11.0-integration8"
-  resolved "https://registry.yarnpkg.com/opal-runtime/-/opal-runtime-0.11.0-integration8.tgz#8442ddc8c66279c6cd004bf7a730a78646202db2"
-  dependencies:
-    glob "6.0.4"
 
 opn@4.0.2:
   version "4.0.2"
@@ -5441,10 +5383,6 @@ tar@^2.0.0, tar@^2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
-textile-js@^0.1.8:
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/textile-js/-/textile-js-0.1.11.tgz#db97d99a8ef916c8f5714a4e82929266e43e0770"
-
 through2@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
@@ -5588,14 +5526,6 @@ uglifyjs-webpack-plugin@^0.4.6:
 uid-number@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/uid-number/-/uid-number-0.0.6.tgz#0ea10e8035e8eb5b8e4449f06da1c730663baa81"
-
-underscore.string@^2.3.3:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/underscore.string/-/underscore.string-2.4.0.tgz#8cdd8fbac4e2d2ea1e7e2e8097c42f442280f85b"
-
-underscore@^1.7.0:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
 
 union-value@^1.0.0:
   version "1.0.0"
@@ -5899,10 +5829,6 @@ xml-char-classes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/xml-char-classes/-/xml-char-classes-1.0.0.tgz#64657848a20ffc5df583a42ad8a277b4512bbc4d"
 
-xmlhttprequest@~1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/xmlhttprequest/-/xmlhttprequest-1.7.0.tgz#dc697a8df0258afacad526c1c296b1bdd12c4ab3"
-
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
@@ -5919,21 +5845,12 @@ yallist@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
 
-yaml-to-json@^0.3.0:
+yamljs@^0.3.0:
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/yaml-to-json/-/yaml-to-json-0.3.0.tgz#65a992312d45e25380ac6670f2312d5ec33f14d2"
+  resolved "https://registry.yarnpkg.com/yamljs/-/yamljs-0.3.0.tgz#dc060bf267447b39f7304e9b2bfbe8b5a7ddb03b"
   dependencies:
-    asciidoctor.js "^1.5.0"
-    async "^0.9.0"
-    commander "2.1.x"
-    findit "^2.0.0"
-    graceful-fs "^3.0.2"
-    js-yaml "^3.2.2"
-    markdown "^0.5.0"
-    mkdirp "^0.5.0"
-    textile-js "^0.1.8"
-    underscore "^1.7.0"
-    underscore.string "^2.3.3"
+    argparse "^1.0.7"
+    glob "^7.0.5"
 
 yargs-parser@^4.2.0:
   version "4.2.1"
