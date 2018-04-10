@@ -3,11 +3,21 @@ backend:
   branch: master 
 media_folder: "/media"  
 collections:
-  - name: "i18n" # Used in routes, e.g., /admin/collections/blog
-    label: "i18n" # Used in the UI
-    folder: "content/i18n" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
+  - name: "text" 
+    label: "text" 
+    folder: "content/text" 
+    create: true 
+    fields:
       - {label: "Key", name: "title", widget: "string"}
       - {label: "Português", name: "pt", widget: "markdown"}
       - {label: "Inglês", name: "en", widget: "markdown"}
+  
+  - name: "terms"    
+    label: "terms" 
+    folder: "content/terms" 
+    create: true 
+    fields: 
+      - {label: "Key", name: "title", widget: "string"}
+      - {label: "Português", name: "pt", widget: "string"}
+      - {label: "Inglês", name: "en", widget: "string"}
+   
