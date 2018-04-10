@@ -1,6 +1,6 @@
 ---
 title: 'index:title'
-pt: CONSTRUA VOCÊ MESMO <br> SUAS REGRAS DE NEGÓCIO
+pt: teste termo
 en: BUILD BUSINESS RULES BY YOURSELF
 ---
 
