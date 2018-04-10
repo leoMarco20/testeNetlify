@@ -124,7 +124,7 @@ module.exports = {
     
     markdown: function (lang) {
         return (k) => {
-            return marky(this.terms[k][lang || def] || "")
+            return marky(this.terms[k][lang || def] || "", { enableHeadingLinkIcons: false})
         }
     }
 }
