@@ -10,6 +10,10 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const i18n = require('./src/i18n.js');
 
+var yaml2json = require('yaml-to-json');
+var result = yaml2json("./content", {});
+console.log(result);
+
 
 function config(lang) {
 
