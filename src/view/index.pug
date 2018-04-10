@@ -3,5 +3,16 @@ html(lang=lang)
   head   
     link(rel='stylesheet', href=(base + '/bundle.css'))
     script(type='text/javascript', src=(base + '/bundle.js'))
+    script(src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js")
   body
     p teste
+    script.
+      if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                  window.netlifyIdentity.on("login", () => {
+                      document.location.href = "/admin/";
+                  });
+              }
+          });
+      }
