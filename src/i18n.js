@@ -1,6 +1,6 @@
 
 
-var terms ={
+var terms2 ={
 
     "index:title": { "pt": "CONSTRUA VOCÊ MESMO <br> SUAS REGRAS DE NEGÓCIO", "en": "BUILD BUSINESS RULES BY YOURSELF" },
     "index:subtitle": { "pt": "O NOGORD.IO empodera sua equipe de negócios na concepção, automação, teste, execução e melhoria continua das regras de negócios.", "en": "NOGORD.IO empowers your business team in business rules’ concept, automation, test, execution and continuous improvement."},
@@ -90,21 +90,41 @@ var terms ={
 
 }
 
+const m2j = require('markdown-to-json');
+const glob = require("glob")
+const marky = require("marky-markdown")
 
-var def = "pt";
+const terms = {}
+
+const def = "pt";
 
 module.exports = {
 
+    terms : terms,
+
     def: def,
 
+    load: function(cb){
+        glob("./content/**/*.md", {}, function (er, files) {
+            md_files = JSON.parse(m2j.parse(files, {}));
+            for (let k in md_files) {
+                var item = md_files[k];
+                terms[item.title] = { pt: item.pt, en: item.en }
+            }
+            console.log(terms);
+            cb()
+        })
+    },
+
     translator : function(lang){
-        return function (k) {
-            return terms[k][lang || def] || ""
+        return (k)=> {
+            return this.terms[k][lang || def] || ""
         }
     }, 
     
-    t: function (k) {
-        return terms[k][document.documentElement.lang || def] || ""
+    markdown: function (lang) {
+        return (k) => {
+            return marky(this.terms[k][lang || def] || "")
+        }
     }
-
 }

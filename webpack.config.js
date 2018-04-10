@@ -10,10 +10,6 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const i18n = require('./src/i18n.js');
 
-YAML = require('yamljs');
-nativeObject = YAML.load('src/admin/config.yml');
-console.log(nativeObject);
-
 
 function config(lang) {
 
@@ -62,7 +58,7 @@ function config(lang) {
                         {
                             loader: "pug-html-loader",
                             options: {
-                                data: { t: i18n.translator(lang), lang: lang || i18n.def, base: base}
+                                data: { t: i18n.translator(lang), m: i18n.markdown(lang), lang: lang || i18n.def, base: base}
                             }
                         }
                     ]
@@ -78,7 +74,7 @@ function config(lang) {
                         {
                             loader: "pug-html-loader",
                             options: {
-                                data: { t: i18n.translator(lang), lang: lang || i18n.def, base: base}
+                                data: { t: i18n.translator(lang), m: i18n.markdown(lang), lang: lang || i18n.def, base: base}
                             }
                         }
                     ]
@@ -107,5 +103,11 @@ function config(lang) {
     };
 }
 
-module.exports = [config(""), config("pt"), config("en")]
+module.exports = new Promise(function(res,rej){ 
+
+    i18n.load(()=>{
+        res([config(""), config("pt"), config("en")])
+    })    
+    
+})
 
