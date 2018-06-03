@@ -5,7 +5,7 @@ html(lang=lang)
     script(type='text/javascript', src=(base + '/bundle.js'))
     script(src="https://identity.netlify.com/v1/netlify-identity-widget.js")
   body
-    p !{t("index:title")}  !{m("dddd")}
+    p
     script.
       if (window.netlifyIdentity) {
           window.netlifyIdentity.on("init", user => {
