@@ -1,7 +1,7 @@
 ---
 title: 'pricing:box-6-title'
-pt: > -
+pt: >-
     pricing:box-6-title
-en: > -
+en: >-
     pricing:box-6-title
 ---

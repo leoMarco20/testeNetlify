@@ -1,7 +1,7 @@
 ---
 title: 'feature:title'
-pt: > -
+pt: >-
     feature:title
-en: > -
+en: >-
     feature:title
 ---

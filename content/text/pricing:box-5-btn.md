@@ -1,7 +1,7 @@
 ---
 title: 'pricing:box-5-btn'
-pt: | -
+pt: |-
     pricing:box-5-btn
-en: | -
+en: |-
     pricing:box-5-btn
 ---

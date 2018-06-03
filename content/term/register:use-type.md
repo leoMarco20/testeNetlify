@@ -1,7 +1,7 @@
 ---
 title: 'register:use-type'
-pt: > -
+pt: >-
     register:use-type
-en: > -
+en: >-
     register:use-type
 ---

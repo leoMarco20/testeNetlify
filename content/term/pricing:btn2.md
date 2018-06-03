@@ -1,7 +1,7 @@
 ---
 title: 'pricing:btn2'
-pt: > -
+pt: >-
     pricing:btn2
-en: > -
+en: >-
     pricing:btn2
 ---

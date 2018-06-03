@@ -1,7 +1,7 @@
 ---
 title: 'navbar:feature'
-pt: > -
+pt: >-
     navbar:feature
-en: > -
+en: >-
     navbar:feature
 ---

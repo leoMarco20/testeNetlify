@@ -1,7 +1,7 @@
 ---
 title: 'header:btn2'
-pt: > -
+pt: >-
     header:btn2
-en: > -
+en: >-
     header:btn2
 ---

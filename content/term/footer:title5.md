@@ -1,7 +1,7 @@
 ---
 title: 'footer:title5'
-pt: > -
+pt: >-
     footer:title5
-en: > -
+en: >-
     footer:title5
 ---

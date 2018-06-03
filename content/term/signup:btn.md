@@ -1,7 +1,7 @@
 ---
 title: 'signup:btn'
-pt: > -
+pt: >-
     signup:btn
-en: > -
+en: >-
     signup:btn
 ---

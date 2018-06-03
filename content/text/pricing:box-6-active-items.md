@@ -1,7 +1,7 @@
 ---
 title: 'pricing:box-6-active-items'
-pt: | -
+pt: |-
     pricing:box-6-active-items
-en: | -
+en: |-
     pricing:box-6-active-items
 ---

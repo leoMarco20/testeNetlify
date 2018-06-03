@@ -1,7 +1,7 @@
 ---
 title: 'header:title'
-pt: > -
+pt: >-
     header:title
-en: > -
+en: >-
     header:title
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'signup:title'
-pt: > -
+pt: >-
     signup:title
-en: > -
+en: >-
     signup:title
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'tab:tab-4-subtitle'
-pt: > -
+pt: >-
     tab:tab-4-subtitle
-en: > -
+en: >-
     tab:tab-4-subtitle
 ---

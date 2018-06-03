@@ -1,7 +1,7 @@
 ---
 title: 'pricing:box-5-inactive-items'
-pt: | -
+pt: |-
     pricing:box-5-inactive-items
-en: | -
+en: |-
     pricing:box-5-inactive-items
 ---

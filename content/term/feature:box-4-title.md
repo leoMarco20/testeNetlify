@@ -1,7 +1,7 @@
 ---
 title: 'feature:box-4-title'
-pt: > -
+pt: >-
     feature:box-4-title
-en: > -
+en: >-
     feature:box-4-title
 ---

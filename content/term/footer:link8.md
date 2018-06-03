@@ -1,7 +1,7 @@
 ---
 title: 'footer:link8'
-pt: > -
+pt: >-
     footer:link8
-en: > -
+en: >-
     footer:link8
 ---

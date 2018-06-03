@@ -1,7 +1,7 @@
 ---
 title: 'footer:link3'
-pt: > -
+pt: >-
     footer:link3
-en: > -
+en: >-
     footer:link3
 ---

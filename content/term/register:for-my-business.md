@@ -1,7 +1,7 @@
 ---
 title: 'register:for-my-business'
-pt: > -
+pt: >-
     register:for-my-business
-en: > -
+en: >-
     register:for-my-business
 ---

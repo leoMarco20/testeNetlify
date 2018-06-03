@@ -1,7 +1,7 @@
 ---
 title: 'footer:email'
-pt: > -
+pt: >-
     footer:email
-en: > -
+en: >-
     footer:email
 ---

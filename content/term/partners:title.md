@@ -1,7 +1,7 @@
 ---
 title: 'partners:title'
-pt: > -
+pt: >-
     partners:title
-en: > -
+en: >-
     partners:title
 ---

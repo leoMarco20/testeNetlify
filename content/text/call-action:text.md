@@ -1,7 +1,7 @@
 ---
 title: 'call-action:text'
-pt: | -
+pt: |-
     call-action:text
-en: | -
+en: |-
     call-action:text
 ---

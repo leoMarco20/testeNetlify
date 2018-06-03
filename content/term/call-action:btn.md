@@ -1,7 +1,7 @@
 ---
 title: 'call-action:btn'
-pt: > -
+pt: >-
     call-action:btn
-en: > -
+en: >-
     call-action:btn
 ---

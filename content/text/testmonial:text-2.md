@@ -1,7 +1,7 @@
 ---
 title: 'testmonial:text-2'
-pt: | -
+pt: |-
     testmonial:text-2
-en: | -
+en: |-
     testmonial:text-2
 ---

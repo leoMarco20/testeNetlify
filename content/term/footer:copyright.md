@@ -1,7 +1,7 @@
 ---
 title: 'footer:copyright'
-pt: > -
+pt: >-
     footer:copyright
-en: > -
+en: >-
     footer:copyright
 ---

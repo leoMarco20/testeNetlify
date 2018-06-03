@@ -1,7 +1,7 @@
 ---
 title: 'feature:box-5-title'
-pt: > -
+pt: >-
     feature:box-5-title
-en: > -
+en: >-
     feature:box-5-title
 ---

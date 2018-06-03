@@ -1,7 +1,7 @@
 ---
 title: 'navbar:register'
-pt: > -
+pt: >-
     navbar:register
-en: > -
+en: >-
     navbar:register
 ---

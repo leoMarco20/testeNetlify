@@ -1,7 +1,7 @@
 ---
 title: 'register:for-my-work'
-pt: > -
+pt: >-
     register:for-my-work
-en: > -
+en: >-
     register:for-my-work
 ---

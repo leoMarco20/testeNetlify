@@ -1,7 +1,7 @@
 ---
 title: 'pricing:box-2-subtitle'
-pt: > -
+pt: >-
     pricing:box-2-subtitle
-en: > -
+en: >-
     pricing:box-2-subtitle
 ---

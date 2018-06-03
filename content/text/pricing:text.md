@@ -1,7 +1,7 @@
 ---
 title: 'pricing:text'
-pt: | -
+pt: |-
     pricing:text
-en: | -
+en: |-
     pricing:text
 ---

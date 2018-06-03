@@ -1,7 +1,7 @@
 ---
 title: 'pricing:box-1-active-items'
-pt: | -
+pt: |-
     pricing:box-1-active-items
-en: | -
+en: |-
     pricing:box-1-active-items
 ---

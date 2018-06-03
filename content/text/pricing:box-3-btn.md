@@ -1,7 +1,7 @@
 ---
 title: 'pricing:box-3-btn'
-pt: | -
+pt: |-
     pricing:box-3-btn
-en: | -
+en: |-
     pricing:box-3-btn
 ---

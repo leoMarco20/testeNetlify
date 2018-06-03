@@ -1,7 +1,7 @@
 ---
 title: 'register:for-my-knowledge'
-pt: > -
+pt: >-
     register:for-my-knowledge
-en: > -
+en: >-
     register:for-my-knowledge
 ---

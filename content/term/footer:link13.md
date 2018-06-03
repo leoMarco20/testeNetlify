@@ -1,7 +1,7 @@
 ---
 title: 'footer:link13'
-pt: > -
+pt: >-
     footer:link13
-en: > -
+en: >-
     footer:link13
 ---
