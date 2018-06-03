@@ -12,9 +12,9 @@ collections:
       - {label: "Português", name: "pt", widget: "markdown"}
       - {label: "Inglês", name: "en", widget: "markdown"}
   
-  - name: "terms"    
-    label: "terms" 
-    folder: "content/terms" 
+  - name: "term"    
+    label: "term" 
+    folder: "content/term" 
     create: true 
     fields: 
       - {label: "Key", name: "title", widget: "string"}
