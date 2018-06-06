@@ -1,6 +1,6 @@
 ---
 title: 'feature:title'
-pt: Características
+pt: Funcionalidades
 en: Features
 ---
 
