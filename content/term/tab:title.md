@@ -1,6 +1,6 @@
 ---
 title: 'tab:title'
-pt: teste
-en: teste
+pt: Benefícios
+en: Benefits
 ---
 
